@@ -1,14 +1,134 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SIABI</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>SiABI - Sistema de Bibliotecas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* bg-gray-50 */
+        }
+    </style>
 </head>
-<body>
-    <nav></nav>
-    <h1>SIABI PROJETO IU</h1>
-    <header></header>
+<body class="text-gray-700">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6">
+            <!-- Barra Superior do Cabeçalho -->
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                     <div class="w-8 h-8 bg-green-800 mr-2 rounded-sm"></div>
+                    <span class="text-sm font-semibold text-gray-600">INSTITUTO FEDERAL<br>Rio Grande do Norte</span>
+                </div>
+                <div class="relative flex-grow max-w-lg mx-8">
+                    <input type="text" placeholder="Pesquisar título, autor, palavra-chave..." class="w-full border border-gray-300 rounded-full py-2 pl-4 pr-12 focus:outline-none focus:ring-2 focus:ring-green-700">
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-gray-200 rounded-full w-8 h-8 flex items-center justify-center text-gray-600 hover:bg-gray-300">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div>
+                     <img src="https://placehold.co/100x40/006400/FFFFFF?text=SiABI" alt="Logo SiABI" class="h-10">
+                </div>
+            </div>
+            <!-- Navegação Principal -->
+            <nav class="flex justify-center items-center border-t">
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">PORTAL IFRN</a>
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">DESTAQUES</a>
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">NOTÍCIAS</a>
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">ÁREA DO USUÁRIO</a>
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">AVALIAÇÕES</a>
+                <a href="#" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">FALE CONOSCO</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10">
+        <!-- Seção de Acervo -->
+        <section class="bg-white p-8 rounded-lg border border-gray-200 mb-10">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">OPÇÕES DO ACERVO</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <!-- Itens do Acervo -->
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+                <div class="bg-gray-200 h-40 rounded-lg"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Bibliotecas -->
+        <section class="bg-white p-8 rounded-lg border border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">BIBLIOTECAS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-4 text-sm">
+                <ul class="space-y-2">
+                    <li><span class="font-bold">Apodi</span> - Biblioteca Central José Leite</li>
+                    <li><span class="font-bold">Caicó</span> - Biblioteca Central Júlia Medeiros</li>
+                    <li><span class="font-bold">Canguaretama</span> - Biblioteca Central Clara Camarão</li>
+                    <li><span class="font-bold">Ceará-Mirim</span> - Biblioteca Central Maria Dolores Bezerra Cavalcanti</li>
+                    <li><span class="font-bold">Currais Novos</span> - Biblioteca Central Estudante Giselia Medeiros Lopes</li>
+                    <li><span class="font-bold">Ipanguaçu</span> - Biblioteca Central Profª Myriam Coeli</li>
+                    <li><span class="font-bold">João Câmara</span> - Biblioteca Central Nathanael Alves da Silva</li>
+                    <li><span class="font-bold">Jucurutu</span> - Biblioteca campus avançado Jucurutu</li>
+                </ul>
+                <ul class="space-y-2">
+                    <li><span class="font-bold">Lajes</span> - Biblioteca Central Antônio Cruz</li>
+                    <li><span class="font-bold">Macau</span> - Biblioteca Central Profª Deuselina Oliveira da Silveira</li>
+                    <li><span class="font-bold">Mossoró</span> - Biblioteca Central Profº Arnaldo Arsênio</li>
+                    <li><span class="font-bold">Natal-Central</span> - Biblioteca Central Sebastião Fernandes</li>
+                    <li><span class="font-bold">Natal-Cidade Alta</span> - Biblioteca Setorial Rocas</li>
+                    <li><span class="font-bold">Natal-Centro Histórico</span> - Biblioteca Central Débora Macedo</li>
+                    <li><span class="font-bold">Natal-Zona Leste</span> - Biblioteca Central Sebastião Názaro de Tuntumussu</li>
+                </ul>
+                 <ul class="space-y-2">
+                    <li><span class="font-bold">Natal-Zona Norte</span> - Biblioteca Central José de Arimatéia</li>
+                    <li><span class="font-bold">Nova Cruz</span> - Biblioteca Central</li>
+                    <li><span class="font-bold">Parelhas</span> - Biblioteca Central</li>
+                    <li><span class="font-bold">Parnamirim</span> - Biblioteca Central Nísia Floresta Brasileira Augusta</li>
+                    <li><span class="font-bold">Pau dos Ferros</span> - Biblioteca Central Paulo Freire</li>
+                    <li><span class="font-bold">Santa Cruz</span> - Biblioteca Central Professor Fernando Gomes Barbosa</li>
+                    <li><span class="font-bold">São Gonçalo do Amarante</span> - Biblioteca Central</li>
+                    <li><span class="font-bold">São Paulo do Potengi</span> - Biblioteca Central</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-200 text-gray-600 text-sm mt-10">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">O SIABI - Bibliotecas</h4>
+                    <p>O SIABI é compatível com o MARC-21, AACR2 e NBR-6023 sendo uma ferramenta de automação de bibliotecas altamente eficiente, que permite grande controle sobre as rotinas e processos de um centro de informação.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Memoriais e Museus</h4>
+                    <p>O sistema é compatível também com a ISAD(g) e NOBRADE permitindo a descrição arquivística de todo o acervo de Memoriais e Museus reunindo mídias, telas, estátuas, equipamentos antigos, fotografias e processos findos.</p>
+                </div>
+            </div>
+             <div class="border-t border-gray-300 pt-8">
+                <p class="mb-6 text-center">Sistema de Automação de Biblioteca, Arquivos Museus e Memorais | Todos os Direitos Reservados | Versão: 15 de junho de 2020. | <a href="#" class="underline hover:text-gray-900">Visitar site do SIABI</a></p>
+                 <div class="flex items-center justify-between">
+                     <div class="flex items-center gap-4">
+                        <p>Redes Sociais:</p>
+                        <div class="flex space-x-2">
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                        </div>
+                     </div>
+                     <p>Fale Conosco: (84) 99999-9999</p>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
+
