@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiABI - Resultados da Pesquisa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9fafb; /* bg-gray-50 */
+        }
+    </style>
+</head>
+<body class="text-gray-700">
+
+    <!-- Cabeçalho -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-6">
+            <!-- Barra Superior do Cabeçalho -->
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                     <div class="w-8 h-8 bg-green-800 mr-2 rounded-sm"></div>
+                    <span class="text-sm font-semibold text-gray-600">INSTITUTO FEDERAL<br>Rio Grande do Norte</span>
+                </div>
+                <div class="relative flex-grow max-w-lg mx-8">
+                    <input type="text" placeholder="Pesquisar título, autor, palavra-chave..." class="w-full border border-gray-300 rounded-full py-2 pl-4 pr-12 focus:outline-none focus:ring-2 focus:ring-green-700">
+                    <button class="absolute right-1.5 top-1/2 -translate-y-1/2 bg-green-700 rounded-full w-8 h-8 flex items-center justify-center text-white hover:bg-green-800">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div>
+                     <img src="https://placehold.co/100x40/006400/FFFFFF?text=SiABI" alt="Logo SiABI" class="h-10">
+                </div>
+            </div>
+            <!-- Navegação Principal -->
+            <!-- Nota: Nenhum item está ativo nesta página, pois é uma página de resultados. -->
+            <nav class="flex justify-center items-center border-t">
+                <a href="destaques.html" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">DESTAQUES</a>
+                <a href="noticias.html" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">NOTÍCIAS</a>
+                <a href="area_usuario.html" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">ÁREA DO USUÁRIO</a>
+                <a href="fale_conosco.html" class="text-gray-600 hover:text-green-800 hover:border-t-2 hover:border-green-800 py-4 px-6 font-semibold">FALE CONOSCO</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-10">
+        <!-- Resultados da Pesquisa -->
+        <section class="bg-white p-8 rounded-lg border border-gray-200">
+            <h2 class="text-2xl font-semibold mb-6 text-gray-800">RESULTADOS DA PESQUISA</h2>
+            
+            <!-- Filtros -->
+            <div class="flex flex-wrap gap-4 mb-8">
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-300">
+                    <span>Tipo</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-300">
+                    <span>Assunto</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-300">
+                    <span>Local</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-300">
+                    <span>Ano</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+                <button class="bg-gray-200 text-gray-700 py-2 px-4 rounded-lg flex items-center space-x-2 hover:bg-gray-300">
+                    <span>Gênero</span>
+                    <i class="fas fa-chevron-down text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Lista de Resultados -->
+            <div class="space-y-6">
+                
+                <!-- Item 1 -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-6">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-semibold text-green-800">TÍTULO DO LIVRO 1</h3>
+                        <p class="text-sm text-gray-500">Publicado: 2023</p>
+                        <p class="text-sm text-gray-600">Nome do Autor</p>
+                    </div>
+                    <div>
+                        <a href="#" class="w-full sm:w-auto block text-center bg-gray-200 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-300 transition-colors">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-6">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-semibold text-green-800">TÍTULO DO LIVRO 2</h3>
+                        <p class="text-sm text-gray-500">Publicado: 2023</p>
+                        <p class="text-sm text-gray-600">Nome do Autor</p>
+                    </div>
+                    <div>
+                        <a href="#" class="w-full sm:w-auto block text-center bg-gray-200 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-300 transition-colors">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-6">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-semibold text-green-800">TÍTULO DO LIVRO 3</h3>
+                        <p class="text-sm text-gray-500">Publicado: 2023</p>
+                        <p class="text-sm text-gray-600">Nome do Autor</p>
+                    </div>
+                    <div>
+                        <a href="#" class="w-full sm:w-auto block text-center bg-gray-200 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-300 transition-colors">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-6">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-semibold text-green-800">TÍTULO DO LIVRO 4</h3>
+                        <p class="text-sm text-gray-500">Publicado: 2023</p>
+                        <p class="text-sm text-gray-600">Nome do Autor</p>
+                    </div>
+                    <div>
+                        <a href="#" class="w-full sm:w-auto block text-center bg-gray-200 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-300 transition-colors">Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b pb-6">
+                    <div class="mb-4 sm:mb-0">
+                        <h3 class="text-lg font-semibold text-green-800">TÍTULO DO LIVRO 5</h3>
+                        <p class="text-sm text-gray-500">Publicado: 2023</p>
+                        <p class="text-sm text-gray-600">Nome do Autor</p>
+                    </div>
+                    <div>
+                        <a href="#" class="w-full sm:w-auto block text-center bg-gray-200 text-gray-700 py-2 px-6 rounded-lg hover:bg-gray-300 transition-colors">Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paginação -->
+            <div class="flex justify-center items-center mt-10 space-x-2">
+                 <a href="#" class="text-gray-500 hover:text-green-700 p-2 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fas fa-chevron-left text-xs"></i>
+                 </a>
+                 <a href="#" class="bg-green-700 text-white font-semibold rounded-full w-8 h-8 flex items-center justify-center">1</a>
+                 <a href="#" class="text-gray-700 hover:text-green-700 rounded-full w-8 h-8 flex items-center justify-center">2</a>
+                 <a href="#" class="text-gray-700 hover:text-green-700 rounded-full w-8 h-8 flex items-center justify-center">3</a>
+                 <a href="#" class="text-gray-700 hover:text-green-700 rounded-full w-8 h-8 flex items-center justify-center">4</a>
+                 <a href="#" class="text-gray-700 hover:text-green-700 rounded-full w-8 h-8 flex items-center justify-center">5</a>
+                 <a href="#" class="text-gray-500 hover:text-green-700 p-2 rounded-full w-8 h-8 flex items-center justify-center">
+                    <i class="fas fa-chevron-right text-xs"></i>
+                 </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer class="bg-gray-200 text-gray-600 text-sm mt-10">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-8">
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">O SIABI - Bibliotecas</h4>
+                    <p>O SIABI é compatível com o MARC-21, AACR2 e NBR-6023 sendo uma ferramenta de automação de bibliotecas altamente eficiente, que permite grande controle sobre as rotinas e processos de um centro de informação.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2 text-gray-800">Memoriais e Museus</h4>
+                    <p>O sistema é compatível também com a ISAD(g) e NOBRADE permitindo a descrição arquivística de todo o acervo de Memoriais e Museus reunindo mídias, telas, estátuas, equipamentos antigos, fotografias e processos findos.</p>
+                </div>
+            </div>
+             <div class="border-t border-gray-300 pt-8">
+                <p class="mb-6 text-center">Sistema de Automação de Biblioteca, Arquivos Museus e Memorais | Todos os Direitos Reservados | Versão: 15 de junho de 2020. | <a href="#" class="underline hover:text-gray-900">Visitar site do SIABI</a></p>
+                 <div class="flex items-center justify-between">
+                     <div class="flex items-center gap-4">
+                        <p>Redes Sociais:</p>
+                        <div class="flex space-x-2">
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                            <a href="#" class="w-8 h-8 bg-white rounded-full border border-gray-300"></a>
+                        </div>
+                     </div>
+                     <p>Fale Conosco: (84) 99999-9999</p>
+                 </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
